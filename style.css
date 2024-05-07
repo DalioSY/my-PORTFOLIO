@@ -231,7 +231,7 @@ main {
 
   #nav .links {
     position: fixed;
-    top: 47px;
+    top: 110px;
     left: -100%;
     flex-direction: column;
     align-items: center;
@@ -246,6 +246,6 @@ main {
   }
 
   #nav .links.active {
-    left: 40px;
+    left: 0;
   }
 }
