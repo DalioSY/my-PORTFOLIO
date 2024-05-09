@@ -6,12 +6,13 @@
 }
 
 :root {
-  --bt-golden: #8a6e2f;
+  --bt-golden: #d4a413;
   --border: 0.01rem solid rgba(0, 0, 0, 0.3);
-  --background: #f3f3f3;
+  --background: #eee;
   --background2: #d3d3d3;
   --text: #000;
   --shadow: #000;
+  --golden-shadow: #fff;
   --golden: radial-gradient(
     ellipse farthest-corner at right bottom,
     #fedb37 0%,
@@ -22,12 +23,13 @@
   );
 }
 .dark-mode:root {
-  --bt-golden: #daa520;
+  --bt-golden: #efb810;
   --border: 0.01rem solid rgba(255, 255, 255, 0.226);
   --background: #222222;
   --background2: #000000;
-  --text: #fff;
-  --shadow: #fff;
+  --text: #eee;
+  --shadow: #eee;
+  --golden-shadow: #f3c332;
   --golden: radial-gradient(
     ellipse farthest-corner at right bottom,
     #ffffff 0%,
@@ -78,13 +80,21 @@ section {
 }
 
 h1 {
-  font-size: 3em;
-  text-align: center;
   color: var(--text);
-  margin-bottom: 1em;
 }
 
 h2 {
+  color: var(--text);
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  color: var(--text);
+}
+
+p {
   color: var(--text);
 }
 
@@ -93,9 +103,23 @@ i {
   color: var(--background);
 }
 
-span {
+strong {
+  color: var(--text);
+}
+
+strong:hover {
   color: var(--bt-golden);
-  text-shadow: 1px 1px 1px var(--shadow);
+}
+
+.title {
+  font-size: 3em;
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 1em;
+}
+
+.title:hover {
+  box-shadow: 0px 0px 11px var(--shadow);
 }
 
 /* Header */
@@ -210,11 +234,32 @@ main {
   grid-area: about;
 }
 
+#about .list {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#about .list .list-img {
+  width: 40vw;
+}
+
+#about .list .list-text {
+  width: 40vw;
+}
+
 #about img {
   width: 40vw;
   border-radius: 1em;
   border: var(--border);
 }
+
+#about img:hover {
+  box-shadow: 0px 0px 11px var(--shadow);
+}
+
 /* Technology */
 #technology {
   grid-area: technology;
@@ -236,13 +281,6 @@ main {
   justify-content: center;
   align-items: center;
   padding: 1em 0;
-}
-
-#footer h4 {
-  font-size: 1em;
-  font-weight: 400;
-  text-align: center;
-  color: var(--text);
 }
 
 #footer .icon {
@@ -268,7 +306,7 @@ main {
 
   #nav .links {
     position: fixed;
-    top: 8em;
+    top: 0;
     left: -100%;
     flex-direction: column;
     align-items: center;
@@ -284,5 +322,9 @@ main {
 
   #nav .links.active {
     left: 0;
+  }
+
+  #about .list .list-text p {
+    font-size: 9.5px;
   }
 }
