@@ -284,7 +284,7 @@ main {
 }
 
 #about .list .list-img {
-  width: 40vw;
+  width: 30vw;
 }
 
 #about .list .list-text {
@@ -292,7 +292,7 @@ main {
 }
 
 #about img {
-  width: 40vw;
+  width: 30vw;
   border-radius: 1em;
   border: var(--border);
 }
@@ -321,7 +321,7 @@ main {
 /* Project */
 #project {
   grid-area: project;
-  width: 100vw;
+  max-width: 100vw;
   overflow-y: scroll;
 }
 
@@ -460,12 +460,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em 0;
+  padding: 0.3em 0;
 }
 
 #footer .icon {
   display: flex;
-  gap: 1.5em;
+  gap: 1em;
 }
 
 #footer .bx {
