@@ -10,6 +10,8 @@
   --border: 0.01rem solid rgba(0, 0, 0, 0.3);
   --background: #eee;
   --background2: #d3d3d3;
+  --background3: #d3d3d3;
+
   --text: #000;
   --shadow: #000;
   --golden-shadow: #fff;
@@ -27,6 +29,8 @@
   --border: 0.01rem solid rgba(255, 255, 255, 0.226);
   --background: #222222;
   --background2: #000000;
+  --background3: #3c3c3c;
+
   --text: #eee;
   --shadow: #eee;
   --golden-shadow: #f3c332;
@@ -70,6 +74,21 @@
 }
 .bxl-typescript:hover {
   color: #3178c6;
+}
+.bxl-postgresql:hover {
+  color: #31648c;
+}
+.bxl-mongodb:hover {
+  color: #118d4d;
+}
+.bxl-docker:hover {
+  color: #1c60e6;
+}
+.bxl-visual-studio:hover {
+  color: #0083d0;
+}
+.bxl-git:hover {
+  color: #e84e31;
 }
 
 section {
@@ -119,7 +138,7 @@ strong:hover {
 }
 
 .title:hover {
-  box-shadow: 0px 0px 11px var(--shadow);
+  color: var(--bt-golden);
 }
 
 /* Header */
@@ -215,18 +234,40 @@ main {
 #home {
   grid-area: home;
   background: var(--golden);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
 }
 
-#home .bx {
+#home .list-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#home .list-text h1 {
+  font-size: 3em;
+}
+
+#home .list-text h2 {
+  font-size: 2em;
+}
+
+#home .list-text p {
+  font-size: 1.5em;
+}
+
+#home .list-icon .bx {
   font-size: 5em;
   color: var(--background);
   text-shadow: 1px 1px 1px var(--shadow);
 }
 
-#home .bxl-linkedin-square:hover {
+#home .list-icon .bxl-linkedin-square:hover {
   color: #0b66c3;
 }
-#home .bxl-github:hover {
+#home .list-icon .bxl-github:hover {
   color: #2d08ff;
 }
 /* About */
@@ -247,7 +288,7 @@ main {
 }
 
 #about .list .list-text {
-  width: 40vw;
+  width: 50vw;
 }
 
 #about img {
@@ -264,16 +305,155 @@ main {
 #technology {
   grid-area: technology;
 }
-#technology i {
+
+#technology .list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+#technology .list .bx {
+  font-size: 10em;
   text-shadow: 1px 1px 1px var(--shadow);
 }
 
 /* Project */
 #project {
   grid-area: project;
+  width: 100vw;
+  overflow-y: scroll;
 }
+
+#project .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+#project .cards .card {
+  width: 16em;
+  height: 16em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--background3);
+  padding: 0.5em;
+}
+
+#project .cards .card:hover {
+  box-shadow: 0px 0px 11px var(--shadow);
+}
+
+#project .cards .card img {
+  width: auto;
+  height: 10em;
+}
+
+#project .cards .card h3 {
+  color: var(--text);
+}
+
+#project .cards .card .text-card {
+  font-size: 0.8em;
+}
+
+#project .cards .card .icons {
+  display: flex;
+}
+
+#project .cards .card .icons .bxl-linkedin-square {
+  color: #0b66c3;
+}
+#project .cards .card .icons .bxl-github {
+  color: #2d08ff;
+}
+#project .cards .card .icons .bxl-html5 {
+  color: #e44d26;
+}
+#project .cards .card .icons .bxl-css3 {
+  color: #2d54e5;
+}
+#project .cards .card .icons .bxl-javascript {
+  color: #efd81d;
+}
+#project .cards .card .icons .bxl-nodejs {
+  color: #8bbf3d;
+}
+#project .cards .card .icons .bxl-react {
+  color: #5ed3f3;
+}
+#project .cards .card .icons .bxl-whatsapp {
+  color: green;
+}
+#project .cards .card .icons .bx-envelope {
+  color: rgb(167, 1, 1);
+}
+#project .cards .card .icons .bxl-typescript {
+  color: #3178c6;
+}
+#project .cards .card .icons .bxl-postgresql {
+  color: #31648c;
+}
+#project .cards .card .icons .bxl-mongodb {
+  color: #118d4d;
+}
+#project .cards .card .icons .bxl-docker {
+  color: #1c60e6;
+}
+#project .cards .card .icons .bxl-visual-studio {
+  color: #0083d0;
+}
+#project .cards .card .icons .bxl-git {
+  color: #e84e31;
+}
+
+#project .cards .icons .bx {
+  font-size: 1.5em;
+}
+
+#project .cards .icons .bx:hover {
+  box-shadow: 0px 0px 11px var(--shadow);
+}
+
+#project .cards .card span {
+  color: red;
+}
+
+#project .cards .card a {
+  color: black;
+  background: var(--bt-golden);
+  border-radius: 0.3em;
+  border: none;
+  width: 10em;
+  height: 22px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  font-size: 0.8em;
+  padding: 1px 0;
+}
+
+#project .cards .card a:hover {
+  box-shadow: 0px 0px 11px var(--shadow);
+}
+
+#project .cards .card a:active {
+  opacity: 0.5;
+}
+
 /* Footer */
 #footer {
+  position: sticky;
+  bottom: 0;
   max-width: 100vw;
   background: var(--background2);
   display: flex;
@@ -324,7 +504,26 @@ main {
     left: 0;
   }
 
+  #home {
+    gap: 1em;
+  }
+
+  #home .list-text h1 {
+    font-size: 2em;
+  }
+
+  #home .list-text h2 {
+    font-size: 1.5em;
+  }
+
+  #home .list-text p {
+    font-size: 1em;
+  }
+
   #about .list .list-text p {
     font-size: 9.5px;
+  }
+  #technology .list .bx {
+    font-size: 5em;
   }
 }
