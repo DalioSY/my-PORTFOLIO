@@ -1,5 +1,19 @@
 const arrayCards = [
   {
+    src: "./img/web-weather-forecast.png",
+    title: "Weather Forecast",
+    summary: "Previsão de tempo com API ",
+    icon1: "html5",
+    icon2: "css3",
+    icon3: "javascript",
+    icon4: "",
+    icon5: "",
+    icon6: "visual-studio",
+    alert: "",
+    deploy: "https://daliosy.github.io/weather-forecast",
+    repository: "https://github.com/DalioSY/weather-forecast",
+  },
+  {
     src: "./img/web-codeffvii.png",
     title: "Final Fantasy VII",
     summary: "Site Soldier Cloud, Zack e Sephiroth",
