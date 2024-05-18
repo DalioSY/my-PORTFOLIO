@@ -1,5 +1,19 @@
 const arrayCards = [
   {
+    src: "./img/web-pizzaria.png",
+    title: "Pizzaria",
+    summary: "Site Pizzaria ",
+    icon1: "html5",
+    icon2: "css3",
+    icon3: "javascript",
+    icon4: "",
+    icon5: "",
+    icon6: "visual-studio",
+    alert: "",
+    deploy: "https://daliosy.github.io/pizzaria",
+    repository: "https://github.com/DalioSY/pizzaria",
+  },
+  {
     src: "./img/web-weather-forecast.png",
     title: "Weather Forecast",
     summary: "Previsão de tempo com API ",
@@ -53,7 +67,7 @@ const arrayCards = [
     icon6: "visual-studio",
     alert: "sem Deploy",
     deploy: "#project",
-    repository: "https://github.com/DalioSY/back-end-devbills",
+    repository: "https://github.com/DalioSY/back-end-codebills",
   },
   {
     src: "./img/web-front-end-codeburger.png",
