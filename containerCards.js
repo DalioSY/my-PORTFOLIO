@@ -1,5 +1,19 @@
 const arrayCards = [
   {
+    src: "./img/web-car-batman.png",
+    title: "Car Batman",
+    summary: "3 carros do Batman ",
+    icon1: "html5",
+    icon2: "css3",
+    icon3: "javascript",
+    icon4: "",
+    icon5: "",
+    icon6: "visual-studio",
+    alert: "",
+    deploy: "https://daliosy.github.io/car-batman",
+    repository: "https://github.com/DalioSY/car-batman",
+  },
+  {
     src: "./img/web-pizzaria.png",
     title: "Pizzaria",
     summary: "Site Pizzaria ",
