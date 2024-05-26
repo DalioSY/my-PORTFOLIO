@@ -104,10 +104,15 @@ h1 {
 
 h2 {
   color: var(--text);
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 400;
   text-align: center;
   color: var(--text);
@@ -131,7 +136,7 @@ strong:hover {
 }
 
 .title {
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
   color: var(--text);
   margin-bottom: 1em;
@@ -148,7 +153,7 @@ strong:hover {
   justify-content: space-around;
   background-color: var(--background2);
   color: var(--text);
-  padding: 1em 0;
+  padding: 0.4em 0;
 }
 
 #header .icon {
@@ -157,7 +162,7 @@ strong:hover {
 }
 
 #header .bx {
-  font-size: 2em;
+  font-size: 1.3em;
   color: var(--text);
   cursor: pointer;
 }
@@ -176,7 +181,7 @@ strong:hover {
   top: 0;
   border-bottom: 0.1em solid rgba(48, 47, 47, 0.733);
   background-color: var(--background);
-  height: 4em;
+  padding: 0.4em 0;
 }
 
 #nav .links {
@@ -188,7 +193,7 @@ strong:hover {
 
 #nav .links a {
   color: var(--text);
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
   flex-basis: 7.5em;
   display: flex;
@@ -203,15 +208,15 @@ strong:hover {
 }
 
 #nav .burger .line {
-  width: 1.5em;
-  height: 0.25em;
+  width: 2em;
+  height: 0.15em;
   background-color: var(--text);
-  margin: 0.5em 0;
+  margin: 0.4em 0;
   cursor: pointer;
 }
 
 #nav .bx-sun {
-  font-size: 2em;
+  font-size: 1.3em;
   margin: 0.25em 2em;
   color: var(--bt-golden);
   text-shadow: none;
@@ -259,7 +264,7 @@ main {
 }
 
 #home .list-icon .bx {
-  font-size: 5em;
+  font-size: 2.5em;
   color: var(--background);
   text-shadow: 1px 1px 1px var(--shadow);
 }
@@ -306,6 +311,14 @@ main {
   grid-area: technology;
 }
 
+#technology article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
 #technology .list {
   display: flex;
   justify-content: center;
@@ -314,7 +327,7 @@ main {
 }
 
 #technology .list .bx {
-  font-size: 10em;
+  font-size: 5em;
   text-shadow: 1px 1px 1px var(--shadow);
 }
 
@@ -346,6 +359,16 @@ main {
   padding: 0.5em;
 }
 
+#project .list .native {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#project p {
+  font-size: 0.2em;
+}
+
 #project .cards .card:hover {
   box-shadow: 0px 0px 11px var(--shadow);
 }
@@ -356,6 +379,7 @@ main {
 }
 
 #project .cards .card h3 {
+  font-size: 1em;
   color: var(--text);
 }
 
@@ -470,7 +494,7 @@ main {
 
 #footer .bx {
   color: var(--text);
-  font-size: 2em;
+  font-size: 1.3em;
 }
 #footer .bxl-linkedin-square:hover {
   color: #0b66c3;
