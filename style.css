@@ -15,13 +15,11 @@
   --text: #000;
   --shadow: #000;
   --golden-shadow: #fff;
-  --golden: radial-gradient(
-    ellipse farthest-corner at right bottom,
-    #fedb37 0%,
-    #fdb931 8%,
-    #9f7928 30%,
-    #8a6e2f 40%,
-    transparent 80%
+  --golden: linear-gradient(
+    126deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(254, 214, 54, 1) 50%,
+    rgba(253, 185, 49, 1) 100%
   );
 }
 .dark-mode:root {
@@ -34,13 +32,11 @@
   --text: #eee;
   --shadow: #eee;
   --golden-shadow: #f3c332;
-  --golden: radial-gradient(
-    ellipse farthest-corner at right bottom,
-    #ffffff 0%,
-    #ffffac 8%,
-    #d1b464 25%,
-    #5d4a1f 62.5%,
-    #5d4a1f 100%
+  --golden: linear-gradient(
+    310deg,
+    rgba(209, 180, 100, 1) 0%,
+    rgba(93, 74, 31, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
   );
 }
 
@@ -108,6 +104,7 @@ h2 {
 }
 
 h3 {
+  color: var(--text);
   font-size: 1.5em;
 }
 
@@ -227,14 +224,16 @@ main {
   background-color: var(--background);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 42em 50em 50em 50em;
+  grid-template-rows: 42em 50em 50em 50em 50em;
 
   grid-template-areas:
     "home"
     "about"
+    "certificate"
     "technology"
     "project";
 }
+
 /* Home */
 #home {
   grid-area: home;
@@ -306,6 +305,22 @@ main {
   box-shadow: 0px 0px 11px var(--shadow);
 }
 
+/* certificate */
+#certificate {
+  grid-area: certificate;
+}
+#certificate article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#certificate img {
+  border-radius: 10px;
+  width: 400px;
+}
+
 /* Technology */
 #technology {
   grid-area: technology;
@@ -329,6 +344,12 @@ main {
 #technology .list .bx {
   font-size: 5em;
   text-shadow: 1px 1px 1px var(--shadow);
+}
+
+#technology .list .native {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Project */
@@ -357,12 +378,6 @@ main {
   box-shadow: var(--shadow);
   background: var(--background3);
   padding: 0.5em;
-}
-
-#project .list .native {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #project p {
