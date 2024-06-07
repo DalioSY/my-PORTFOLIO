@@ -16,10 +16,10 @@
   --shadow: #000;
   --golden-shadow: #fff;
   --golden: linear-gradient(
-    126deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(254, 214, 54, 1) 50%,
-    rgba(253, 185, 49, 1) 100%
+    135deg,
+    rgba(186, 149, 1, 1) 0%,
+    rgba(240, 188, 57, 1) 50%,
+    rgba(255, 244, 221, 1) 100%
   );
 }
 .dark-mode:root {
@@ -240,8 +240,8 @@ main {
   background: var(--golden);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 3em;
+  justify-content: flex-start;
+  gap: 2em;
 }
 
 #home .list-text {
@@ -274,6 +274,35 @@ main {
 #home .list-icon .bxl-github:hover {
   color: #2d08ff;
 }
+
+#home .mov-icon {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+#home .icon {
+  padding: 0 20px;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 110%;
+  animation: autoRun 20s linear infinite;
+  animation-delay: calc(22 / var(--quantity) * var(--delay));
+}
+#home .icon img {
+  width: 100%;
+}
+
+@keyframes autoRun {
+  from {
+    left: 110%;
+  }
+  to {
+    left: -60px;
+  }
+}
+
 /* About */
 #about {
   grid-area: about;
