@@ -274,7 +274,7 @@ main {
 #home .list-icon .bxl-github:hover {
   color: #2d08ff;
 }
-
+/* 
 #home .mov-icon {
   width: 100%;
   display: flex;
@@ -301,7 +301,7 @@ main {
   to {
     left: -60px;
   }
-}
+} */
 
 /* About */
 #about {
