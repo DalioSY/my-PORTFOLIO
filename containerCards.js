@@ -1,5 +1,19 @@
 const arrayCards = [
   {
+    src: "./img/web-search-cep.png",
+    title: "Search CEP",
+    summary: "Buscador de CEP com API",
+    icon1: "javascript",
+    icon2: "react",
+    icon3: "",
+    icon4: "",
+    icon5: "",
+    icon6: "visual-studio",
+    alert: "",
+    deploy: "https://daliosy.github.io/search-cep/",
+    repository: "https://github.com/DalioSY/search-cep",
+  },
+  {
     src: "./img/web-lookapp.jpg",
     title: "Look App",
     summary: "App React Native",

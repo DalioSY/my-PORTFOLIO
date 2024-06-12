@@ -16,10 +16,10 @@
   --shadow: #000;
   --golden-shadow: #fff;
   --golden: linear-gradient(
-    135deg,
-    rgba(186, 149, 1, 1) 0%,
-    rgba(240, 188, 57, 1) 50%,
-    rgba(255, 244, 221, 1) 100%
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(218, 165, 32, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
   );
 }
 .dark-mode:root {
@@ -33,9 +33,9 @@
   --shadow: #eee;
   --golden-shadow: #f3c332;
   --golden: linear-gradient(
-    310deg,
-    rgba(209, 180, 100, 1) 0%,
-    rgba(93, 74, 31, 1) 50%,
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(218, 165, 32, 1) 50%,
     rgba(0, 0, 0, 1) 100%
   );
 }
