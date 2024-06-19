@@ -1,5 +1,19 @@
 const arrayCards = [
   {
+    src: "./img/web-facebook-clone.png",
+    title: "Fecebook Clone",
+    summary: "Praticando conhecimento com Tailwind CSS",
+    icon1: "html5",
+    icon2: "",
+    icon3: "",
+    icon4: "",
+    icon5: "",
+    icon6: "visual-studio",
+    alert: "sem Deploy",
+    deploy: "#project",
+    repository: "https://github.com/DalioSY/facebook-clone",
+  },
+  {
     src: "./img/web-search-cep.png",
     title: "Search CEP",
     summary: "Buscador de CEP com API",
