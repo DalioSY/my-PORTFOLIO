@@ -20,8 +20,6 @@ Agradeço ao DevClub por me proporcionar a oportunidade de aprimorar minhas habi
 
 ## Link:
 
-> Portfólio: https://daliosy.github.io/my-PORTFOLIO
-
 > Linkedin: https://www.linkedin.com/in/dalio-s-yamada/
 
 > GitHub: https://github.com/DalioSY
